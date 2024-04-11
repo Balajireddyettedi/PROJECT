@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DUNZO</title>
+    <style>
+        header{
+            width: 100%;
+            height: 100vh;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px,5%;
+        }
+        .logo{
+           padding: 10px;
+           margin-left: 200px;
+        }
+        nav ul{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+        }
+        nav ul li{
+            list-style: none;
+            margin-right: 50px;
+            
+
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: 300px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        nav ul li a:hover{
+          color: rgb(51, 194, 51);
+        }
+
+        .btn{
+            background-color: rgb(109, 184, 109);
+            padding: 12px 25px;
+            border-radius: 25px;
+            transition: 0.5s;
+            color: white;
+            
+        }
+        .btn:hover{
+            background: transparent;
+            border: 2px solid lightgreen;
+            color: green;
+
+        }
+        .content{
+            padding: 0 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+
+        }
+        .content .left{
+            width: 50%;
+        }
+        .left h1{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 400px;
+        }
+        .left p{
+            font-size: 16px;
+            color: gray;
+            padding-block: 20px;
+
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            border-radius: 30px;
+            background-color: blue;
+            color: white;
+        }
+        .bar{
+            
+            display: flex;
+            height: 30px;
+            width: 100%;
+            background: linear-gradient(90deg,black, blue);
+            color: white;
+            align-items: center;
+            justify-content: space-around;
+        }
+         .bar p2 a{
+            text-decoration: none;
+            color: rgb(14, 170, 14);
+            font-size: 15px;
+            font-weight: 600;
+        }
+       .right{
+        width: 50%;
+       }
+       .right img{
+        width: 100%;
+        height: 100%;
+       }
+       h2{
+        margin-left: 200px;
+       }
+       .content1{
+         display: flex;
+         height: 25vh;
+         gap: 18px;
+        margin-left: 200px;
+        
+
+       }
+       .content1 img{
+        border-radius: 10px;
+
+       }
+       .order1{
+        background-color: rgb(231, 236, 237);
+        padding: 10px 0px 80px 0px;
+        
+       }
+       
+       .content2{
+        display: flex;
+        height: 50px;
+        
+        gap: 18px;
+        margin-left: 220px;
+       }
+       .content2 div{
+        height: 100px;
+        width: 150px;
+        background-color: white;
+        display: flex;
+        align-items: flex-end;
+        justify-content:flex-start;
+        font-size: 15px;
+        padding-bottom: 5px;
+        
+       }
+       
+       .content2 img{
+        border-radius: 10px;
+        height: 50px;
+        width: 40px;
+        margin-left: 10px;
+        margin-bottom: 40px;
+        
+       }
+       .content3{
+        display: flex;
+        height: 25vh;
+        gap: 18px;
+        margin-left: 200px;
+       }
+       .content3 img{
+        border-radius: 10px;
+       }
+       .content4{
+        height: 180px;
+        width: 100%;
+        background-color: rgb(141, 150, 160);
+        margin-top: 150px;
+       }
+      .content4 img{
+        height: 250px;
+        width: auto;
+        margin: -70px 0px 0px 300px;
+
+        
+      }
+      .content4 span{
+        text-align: center;
+      }
+      .content4 h2 {
+        margin: -140px 0px 0px 540px;
+      }
+      .content4 h3{
+        margin: 0px 0px 0px 540px;
+      }
+      .footer{
+        height: auto;
+        width: 100%;
+        background:linear-gradient(black, rgb(11, 11, 69));
+        color: white;
+      }
+      .footer h4{
+        padding-top: 30px;
+        margin-left: 200px;
+
+      }
+      .footer p{
+        margin-left: 200px;
+        margin-right: 100px;
+        padding-bottom: 25px;
+      }
+      .info{
+        display: flex;
+        gap: 45px;
+        margin-left: 200px;
+        
+      }
+      ul li{
+        list-style: none;
+        font-size: 15px;
+        margin-left: -30px;
+        
+      }
+      ul li a{
+        text-decoration: none;
+        color: white;
+        
+        
+      }
+      .info img{
+        height: 90px;
+        width: 90px;
+        margin-top: 20px;
+      }
+      .info .scooter{
+        height: 200px;
+        width: 200px;
+      }
+      .info ul li a:hover{
+        text-decoration: underline;
+      }
+      
+      
+
+           
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/logo-7b2b540792556466133aea6e7c6ae513.png?tr=w-244,h-56,cm-pad_resize"></div>
+            <p><a href="#">Set Location <i class="fa fa-caret-down"></i></a></p>
+            <ul>
+                <li><a href="#">Dunzo for Partners</a></li>
+                <li><a href="#">Business with Dunzo</a></li>
+                <li><a href="https://www.dunzo.com/search"><i class="fa fa-search"><br>search</i></a></li>
+                <li><a href="https://www.dunzo.com/checkout"><i class="fa fa-shopping-cart"><br>cart</i></a></li>
+                <li><a class="btn" href="Signin.html">Sign in</a></li>
+                
+
+            </ul>
+            
+        </nav>
+        <div class="bar">
+            <p1>Order Paan items, munchies and much more on our new Dunzo Mo app</p1>
+            <p2><a href="https://www.dunzo.com/dunzo-mo">Download Dunzo Mo app now > </a></p2>
+        </div>
+             <div class="order1">
+            <h2>Essentials delivered to your doorstep</h2>
+            <div class="content1">
+            <br><br>
+            <img src="https://ik.imagekit.io/dunzo/home/tr:w-488,h-360_home_icon/operator-FFWUCfzmUzhok89HMYt0ON2Gy5oZECO73gRenPw11HxAeCLBtTBOG8FMqMTe92UOnScOPMUnjYDcaPVxx7wSFJwXJ3kSR3YRsPby4EgC4zW2mVYLc99zuvVh7O2Ppmx2QMQd40UiwYLGhy0OjbMayr.png"/>
+            <img src="https://ik.imagekit.io/dunzo/home/tr:w-488,h-360_home_icon/dunzo/icons/newHome/promoBanner/kitImageUrl/largeIcons/default_pnd_secondary2_1613527381240.png">
+            <img src="https://ik.imagekit.io/dunzo/home/tr:w-488,h-360_home_icon/dunzo/icons/newHome/promoBanner/kitImageUrl/largeIcons/default_meat_secondary2_1613527536249.png">
+            <img src="https://ik.imagekit.io/dunzo/home/tr:w-488,h-360_home_icon/dunzo/icons/newHome/promoBanner/kitImageUrl/largeIcons/default_fnv_secondary2_1613527515094.png">
+
+                    
+        </div>
+             
+        <br>
+        <div class="content2">
+            <div><img src="https://ik.imagekit.io/dunzo/home/tr:w-80,h-80_home_icon/icons/R4_Icons/Home/default_pets_tertiary_grid_1609739755734.png"><span>pet supplies</span></div>
+            <div><img src="https://ik.imagekit.io/dunzo/home/tr:w-80,h-80_home_icon/icons/R4_Icons/Home/paan_grid_1609739855940.png">Paan shop</div>
+            <div><img src="https://ik.imagekit.io/dunzo/home/tr:w-80,h-80_home_icon/icons/R4_Icons/Home/default_gifts_tertiary_grid_1613527886275.png">Gifts and Lifestyle</div>
+        </div>
+             </div>
+
+        <br><br>
+        <h2>Top picks for you</h2>
+        <div class="content3">
+            <img src="https://ik.imagekit.io/dunzo/web-assets/images/d4b.jpg?tr=w-488,h-326,cm-pad_resize">
+            <img src="https://ik.imagekit.io/dunzo/web-assets/images/grocery.jpg?tr=w-488,h-326,cm-pad_resize">
+            <img src="https://ik.imagekit.io/dunzo/web-assets/images/restaurants.jpg?tr=w-488,h-326,cm-pad_resize">
+            <img src="https://ik.imagekit.io/dunzo/web-assets/images/send-packages.jpg?tr=w-488,h-326,cm-pad_resize">
+        </div>
+        <div class="content4">
+            <div>
+                <img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/dunzo-daily-app-preview-7c97560e963bcd173c11c470b2ff63ed.png?tr=w-410,h-474,cm-pad_resize"/>
+                <h2>All this from the convenience of your phone.</h2>
+                <h3>Download the Dunzo mobile app.</h3>
+                
+
+            </div>
+            
+        </div>
+        <div class="footer">
+            <h4>You can’t stop time, but you can save it!</h4>
+            <p>Living in the city, there is never enough time to shop for groceries, pick-up supplies, grab food and wade through traffic on the way back home. How about we take care of all of the above for you? What if we can give you all that time back? Send packages across the city and get everything from food, groceries, medicines and pet supplies delivered right to your doorstep. From any store to your door, just make a list and we’ll make it disappear. Just Dunzo It!<p>
+<br>
+<hr>
+<div class="info">
+    <img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/logo-footer-dbc7c51cccb1c5e6b2210740296729e3.png?tr=w-140,h-140,cm-pad_resize"/>
+           <div class="dunzo">
+            
+            <h3>DUNZO</h3>
+             <ul>
+                <li><a href="https://www.dunzo.com/about">About</a></li><br>
+                <li><a href="https://www.dunzo.com/careers">Jobs</a></li><br>
+                <li><a href="https://www.dunzo.com/contact">Contact</a></li><br>
+                <li><a href="https://www.dunzo.com/terms">Terms and Conditions</a></li><br>
+                <li><a href="https://www.dunzo.com/privacy">Privacy Policy</a></li><br>
+                <li><a href="https://www.dunzo.com/partner">Dunzo for Partner</a></li><br>
+                <li><a href="https://www.dunzo.com/business">Dunzo for Business</a></li><br>
+             </ul>
+           </div>
+           <div class="cities">
+            <h3>SERVICEABLE CITIES</h3>
+            <ul>
+                <li><a href="https://www.dunzo.com/bangalore">Bangalore</a></li><br>
+                <li><a href="https://www.dunzo.com/pune">Pune</a></li><br>
+                <li><a href="https://www.dunzo.com/gurgaon">Gurgaon</a></li><br>
+                <li><a href="https://www.dunzo.com/hyderabad">Hyderabad</a></li><br>
+                <li><a href="https://www.dunzo.com/delhi">Delhi</a></li><br>
+                <li><a href="https://www.dunzo.com/chennai">Chennai</a></li><br>
+                <li><a href="https://www.dunzo.com/mumbai">Mumbai</a></li><br>
+             </ul>
+           </div>
+           <div class="social">
+            <h3>GET IN TOUCH</h3>
+            <ul>
+                <li><a href="#">Email</a></li><br>
+                <li><a href="https://www.facebook.com/dunzoit">Facebook</a></li><br>
+                <li><a href="https://www.instagram.com/dunzo_it/">Instagram</a></li><br>
+                <li><a href="#">Media Queries</a></li><br>
+                <li><a href="https://twitter.com/dunzoit">Twitter</a></li><br>
+                <li><a href="https://www.linkedin.com/company/dunzo-in">Linkedin</a></li><br>
+                
+             </ul>
+           </div>
+           <img class="scooter" src="https://resources.dunzo.com/web-assets/prod/_next/static/images/footer-mascot-0a94653a7991194aa18773ec353d7fb6.png?tr=w-520,h-400,cm-pad_resize"/>
+
+           
+</div>
+
+
+        </div>
+        
+    </header>
+</body>
+</html>
